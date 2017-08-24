@@ -13,6 +13,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Setup theme
 antigen theme agnoster
 
+# Source Z
+. ~/.z.sh
+
 # Python virtualenvwrapper
 . /usr/local/bin/virtualenvwrapper.sh
 
