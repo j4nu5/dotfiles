@@ -22,6 +22,8 @@ Plugin 'ervandew/supertab'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
+" Custom settings
 set t_Co=256
 syntax enable
 set number
@@ -29,19 +31,29 @@ set expandtab
 set incsearch
 set hlsearch
 
+
 " Set theme
-set background=dark
-let g:solarized_termtrans = 1       " workaround the mismatching backgrounds
+
+" workaround the mismatching backgrounds of vim and terminal solarized
+let g:solarized_termtrans = 1
+
 colorscheme solarized
+set background=dark
+
+" without this, visual selection makes the text invisible
+highlight! link Visual CursorLine
+
 
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'bubblegum'
 
+
 " Statusline
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -51,7 +63,8 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_go_checkers = ['go']
 
-" Highlight
+
+" Go highlight
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
