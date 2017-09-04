@@ -26,6 +26,8 @@ set t_Co=256
 syntax enable
 set number
 set expandtab
+set incsearch
+set hlsearch
 
 " Set theme
 set background=dark
