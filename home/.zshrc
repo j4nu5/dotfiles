@@ -13,6 +13,11 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Setup theme
 antigen theme agnoster
 
+# Source local zshrc
+if [ -f ~/.zshrc.local ]; then
+    . ~/.zshrc.local
+fi
+
 # Source Z
 . ~/.z.sh
 
