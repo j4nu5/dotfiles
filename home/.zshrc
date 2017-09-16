@@ -22,7 +22,9 @@ fi
 . ~/.z.sh
 
 # Python virtualenvwrapper
-. /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    . /usr/local/bin/virtualenvwrapper.sh
+fi
 
 # Go lang
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
