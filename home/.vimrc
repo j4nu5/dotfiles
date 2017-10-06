@@ -27,9 +27,15 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax enable
 set number
-set expandtab
 set incsearch
 set hlsearch
+
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+set smartindent
+set cindent
 
 
 " Set theme
