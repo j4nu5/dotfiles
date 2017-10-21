@@ -33,5 +33,5 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export CXXFLAGS='-std=c++11'
 if hash clang++ 2>/dev/null; then
     export CXX=clang++
-    export CXXFLAGS='-std=c++11 -stdlib=libc++'
+    export CXXFLAGS='-std=c++1y -stdlib=libc++'
 fi
