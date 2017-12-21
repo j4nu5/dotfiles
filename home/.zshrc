@@ -35,3 +35,5 @@ if hash clang++ 2>/dev/null; then
     export CXX=clang++
     export CXXFLAGS='-std=c++1y -stdlib=libc++'
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

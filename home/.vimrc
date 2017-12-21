@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-scripts/L9'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -16,7 +17,10 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'fatih/vim-go'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/FuzzyFinder'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,6 +33,7 @@ syntax enable
 set number
 set incsearch
 set hlsearch
+set number relativenumber
 
 set expandtab
 set shiftwidth=2
@@ -61,9 +66,8 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 
-" Syntastic C++
-let g:syntastic_cpp_compiler="clang++"
-let g:syntastic_cpp_compiler_options="-std=c++1y -stdlib=libc++"
+" Disable Syntastic C++
+let g:syntastic_cpp_checkers = ['']
 
 
 " Syntastic Go
@@ -83,3 +87,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+
+" You Complete Me
+let g:ycm_extra_conf_globlist = ['~/chromium/.ycm_extra_conf.py']
