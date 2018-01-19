@@ -9,7 +9,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-scripts/L9'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -20,7 +19,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -90,4 +90,4 @@ let g:go_highlight_build_constraints = 1
 
 
 " You Complete Me
-let g:ycm_extra_conf_globlist = ['~/chromium/.ycm_extra_conf.py']
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
