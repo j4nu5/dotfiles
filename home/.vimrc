@@ -21,6 +21,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vimwiki/vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,6 +43,7 @@ set softtabstop=2
 set autoindent
 set smartindent
 set cindent
+set colorcolumn=50,72,80
 
 
 " Set theme
@@ -91,3 +94,4 @@ let g:go_highlight_build_constraints = 1
 
 " You Complete Me
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
