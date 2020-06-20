@@ -16,7 +16,6 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'fatih/vim-go'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
@@ -44,6 +43,7 @@ set autoindent
 set smartindent
 set cindent
 set colorcolumn=50,72,80
+set spell spelllang=en_us
 
 
 " Set theme
@@ -90,8 +90,4 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
-
-
-" You Complete Me
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
